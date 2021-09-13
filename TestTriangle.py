@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Updated Jan 21, 2018
-The primary goal of this file is to demonstrate a simple unittest implementation
+Updated Sep 13, 2020
 
 @author: Jose J. Cruz
 """
@@ -10,10 +9,6 @@ import unittest
 
 from Triangle import classifyTriangle
 
-
-# This code implements the unit test functionality
-# https://docs.python.org/3/library/unittest.html has a nice description of
-# the framework
 
 class TestTriangles(unittest.TestCase):
     # Test valid inputs in the function
@@ -39,8 +34,8 @@ class TestTriangles(unittest.TestCase):
 
     # Test that make sure a triangle is a Scalene
     def testScaleneTriangle(self):
-        self.assertEqual(classifyTriangle(1, 2, 3), 'Scalene',
-                         '1, 2, 3 is a Scalene triangle')
+        self.assertEqual(classifyTriangle(6, 2, 5), 'Scalene',
+                         '6, 2, 5 is a Scalene triangle')
         self.assertEqual(classifyTriangle(2, 3, 4), 'Scalene',
                          '2, 3, 4 is a Scalene triangle')
         self.assertEqual(classifyTriangle(9, 13, 14), 'Scalene',
