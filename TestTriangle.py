@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Updated Sep 13, 2020
-
 @author: Jose J. Cruz
 """
 
@@ -13,7 +11,8 @@ from Triangle import classifyTriangle
 class TestTriangles(unittest.TestCase):
     # Test valid inputs in the function
     def testInputInTriangle(self):
-        self.assertRaises(TypeError, classifyTriangle, '3', '4', '5')
+        self.assertEqual(classifyTriangle('3', '4', '5'), 'InvalidInput',
+                         '3, 4, 5 are not strings not ints')
         self.assertRaises(TypeError, classifyTriangle, 1, 2)
         self.assertRaises(TypeError, classifyTriangle, True, 'A')
         self.assertEqual(classifyTriangle(3, 0, 5), 'InvalidInput',
