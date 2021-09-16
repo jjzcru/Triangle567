@@ -1,5 +1,5 @@
 # Testing a legacy program and reporting on testing results
-[![build status of master](https://travis-ci.org/jjzcru/Triangle567.svg?branch=master)](https://travis-ci.org/jjzcru/Triangle567)
+[![build status of master](https://travis-ci.org/jjzcru/Triangle567.svg?branch=main)](https://travis-ci.org/jjzcru/Triangle567)
 
 ## Author
 Jose J. Cruz
